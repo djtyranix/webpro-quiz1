@@ -3,6 +3,10 @@ body {
     font-family: lato, sans-serif;
 }
 
+#page {
+    animation: ;
+}
+
 i.brand-logo-light {
     font-size: 3.5rem;
     color: #F7F7F7;
@@ -25,6 +29,68 @@ i.brand-logo-dark {
 
 i.brand-logo-dark:hover {
     color: #FFBC42;
+}
+
+/* LOADER */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 8em;
+    height: 8em;
+    margin: -75px 0 0 -75px;
+    border: .6em solid #F7F7F7;
+    border-radius: 50%;
+    border-top: .6em solid #006BA6;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* FADE IN ANIMATION */
+.fade-in {
+    animation: fadeIn ease-in-out 1s;
+    -webkit-animation: fadeIn ease-in-out 1s;
+    -moz-animation: fadeIn ease-in-out 1s;
+    -o-animation: fadeIn ease-in-out 1s;
+    -ms-animation: fadeIn ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 /* NAVBAR */
