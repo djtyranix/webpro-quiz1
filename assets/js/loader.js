@@ -14,7 +14,9 @@ function show(id, value) {
 }
 
 onReady(function () {
-    document.getElementById('page').classList.add("fade-in");
     show('loader', false);
+    document.getElementById('page').classList.add("fade-in");
     show('page', true);
+    document.getElementById('footer').classList.add("fade-in");
+    show('footer', true);
 });

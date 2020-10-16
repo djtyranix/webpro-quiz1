@@ -17,11 +17,14 @@
     <!-- FONTAWESOME V5 -->
     <script src="https://kit.fontawesome.com/13982183c6.js" crossorigin="anonymous"></script>
 
+    <!-- LOADER SCRIPT -->
+    <script src="assets/js/loader.js"></script>
+
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="assets/favicon/favicon.png"/>
 </head>
 <style>
-    .page {
+    #page {
         background-color: #f7f7f7;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23c6e4f9' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%2396d0fa' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2365bdfc' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2335a9fd' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230496ff' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
         background-attachment: fixed;
@@ -29,8 +32,8 @@
         /* background by SVGBackgrounds.com */
     }
 </style>
-<body class="fade-in">
-    <div class="page">
+<body>
+    <div id="page" style="display: none;">
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top px-5">
             <a class="navbar-brand ml-5" href="/quiz1/"><i class="fas fa-cubes fa-3x brand-logo-dark" style="font-size: 3.5rem;"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -197,12 +200,13 @@
             </div>
         </div>
     </div>
-    <div class="footer d-flex justify-content-center fade-in">
+    <div id="footer" class="d-flex justify-content-center" style="display: none!important;">
         <p>
             &copy; 2020 Michael Ricky. Made with background from <a href="https://svgbackgrounds.com">SVGBackgrounds.com</a>
         </p>
     </div>
-    
+    <div id="loader"></div>
+
     <!-- JQUERY & POPPER.JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
