@@ -20,33 +20,92 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="assets/favicon/favicon.png"/>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top px-5">
-        <a class="navbar-brand ml-5" href="/quiz1/"><i class="fas fa-cubes fa-3x" style="font-size: 3.5rem;"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-5">
-                <li class="nav-item">
-                    <a class="nav-link" href="/quiz1/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hometown">Hometown</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="">Food</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tourist">Tourism</a>
-                </li>
-            </ul>
+<style>
+    .page {
+        background-color: #f7f7f7;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23f8d1d5' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23f5aab4' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23ee8294' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23e55776' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23d81159' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        /* background by SVGBackgrounds.com */
+    }
+</style>
+<body class="fade-in">
+    <div class="page">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top px-5">
+            <a class="navbar-brand ml-5" href="/quiz1/"><i class="fas fa-cubes fa-3x" style="font-size: 3.5rem;"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quiz1/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hometown">Hometown</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tourist">Tourism</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content container" style="padding: 0 1vw 10vh;">
+            <div class="row justify-content-center">
+                <div class="about" style="padding-bottom: 3.5rem;">
+                    <h3><center>Nothing brings people together</center></h3>
+                    <h2><span class="mike-blue"><center>like <strong>Good Food</strong>.</center></span></h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="img-container">
+                        <img src="assets/img/telorgabus.png" alt="kue_telur_gabus" width="100%">
+                    </div>
+                </div>
+                <div class="col-6" style="padding-top: 3rem;">
+                    <h1><strong>Telur Gabus</strong></h1>
+                    <p class="food-description" align="justify">
+                        Telur Gabus is a traditional food from Bekasi / Betawi.
+                        It's made out of flour, egg, butter, and most of the time, cheese.
+                        It's fried, and will have a crunchy texture due to the nature
+                        of any fried food. The taste is actually vary, depending on which
+                        variant we buy. Usually, we can get it in sweet variant and cheese variant.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="img-container">
+                        <img src="assets/img/dongkal.jpg" alt="kue_dongkal" width="100%">
+                    </div>
+                </div>
+                <div class="col-6" style="padding-top: 3rem;">
+                    <h1><strong>Kue Dongkal</strong></h1>
+                    <p class="food-description" align="justify">
+                        Kue Dongkal is a traditional food from Bekasi / Betawi.
+                        It's a legendary food since it's been here since a long time ago.
+                        It's mostly made out of flour and coconut. The taste is similar
+                        to Kue Putu combined with Kue Lupis. It's sweet because of the brown
+                        sugar added as a fla of some sort.
+                    </p>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+    <div class="footer d-flex justify-content-center fade-in">
+        <p>
+            &copy; 2020 Michael Ricky. Made with background from <a href="https://svgbackgrounds.com">SVGBackgrounds.com</a>
+        </p>
+    </div>
 
     <!-- JQUERY & POPPER.JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
